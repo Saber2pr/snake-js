@@ -1,0 +1,33 @@
+{
+  "name": "snake-js",
+  "version": "0.0.1",
+  "description": "snake-js",
+  "repository": {
+    "type": "git",
+    "url": "git+_____"
+  },
+  "author": "saber2pr",
+  "license": "ISC",
+  "files": [
+    "lib/core/*",
+    "lib/index.*"
+  ],
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "node ./lib/test/test.js",
+    "start": "tsc --watch",
+    "dev": "rollup -c --watch"
+  },
+  "devDependencies": {
+    "typescript": "^3.2.1",
+    "rollup": "^1.1.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  },
+  "dependencies": {
+    "saber-canvas": "^1.1.8",
+    "saber-interval": "^1.1.2",
+    "saber-list": "0.0.1",
+    "saber-rand": "^1.0.9"
+  }
+}
