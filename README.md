@@ -2,7 +2,7 @@
 
 > snake-js, based on canvas.
 
-[view>>](https://saber2pr.github.io/snake-js/)
+[view>>](https://saber2pr.github.io/snake-js/index.html)
 
 ```bash
 # from github
