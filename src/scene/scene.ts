@@ -9,13 +9,13 @@ import { Canvas } from 'saber-canvas'
 import { Snake } from '../core/Snake'
 import { config } from '../config/props'
 import { Background } from '../components/root'
-import { getRandPos } from '../utils/rand'
+import { getRandPos, getRandColor } from '../utils/rand'
 
 export const canvas = new Canvas(config)
 
 export function createFood() {
   const newFood = createBlock(config.bodySize)
-  newFood.node.setPosition(getRandPos(config)).setColor(config.colors.food)
+  newFood.node.setPosition(getRandPos(config)).setColor(getRandColor())
   return newFood
 }
 

@@ -1,6 +1,6 @@
 # snake-js
 
-> snake-js
+> snake-js, based on canvas.
 
 ```bash
 # from github

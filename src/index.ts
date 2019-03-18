@@ -9,6 +9,9 @@ import { walkAll } from 'saber-list'
 import { IBlock } from './components/Block'
 import { Background } from './components/root'
 import { canvas, createFood, snake } from './scene/scene'
+import { TouchFront } from 'saber-dom'
+import { Front } from './core/Snake'
+import { config } from './config/props'
 
 const renderTree = (Root: IBlock) =>
   walkAll(Root, block => {
@@ -20,13 +23,26 @@ function renderFrame(Root: IBlock) {
   renderTree(Root)
 }
 
+let currentFood = createFood()
+Background.append(currentFood)
+let currentFront: Front = 'right'
+
 const update = () => {
-  console.log('updata')
-  snake.move('right')
-  // Background.append(createFood())
+  if (snake.move(currentFront).meet(currentFood.node.getPosition())) {
+    snake.eat(currentFood.node)
+    currentFood = createFood()
+    Background.append(currentFood)
+  }
   renderFrame(Background)
 }
 
 update()
 
-schedule(update, { delta: 1000 })
+schedule(update, { delta: config.fps })
+
+new TouchFront()
+  .onLeft(() => (currentFront = 'left'))
+  .onRight(() => (currentFront = 'right'))
+  .onUp(() => (currentFront = 'down'))
+  .onDown(() => (currentFront = 'up'))
+  .listen()

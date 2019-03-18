@@ -23,5 +23,13 @@ export function getRandPos({
 
 export function getRandColor() {
   const sand = rand(0, 10)
-  return sand > 8 ? '' : sand > 6 ? '' : sand > 4 ? '' : sand > 2 ? '' : ''
+  return sand > 8
+    ? 'red'
+    : sand > 6
+    ? 'green'
+    : sand > 4
+    ? 'black'
+    : sand > 2
+    ? ''
+    : 'yellow'
 }
