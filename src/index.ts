@@ -1,8 +1,8 @@
 /*
  * @Author: saber2pr
  * @Date: 2019-03-18 18:28:18
- * @Last Modified by:   saber2pr
- * @Last Modified time: 2019-03-18 18:28:18
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-03-18 21:19:23
  */
 import { schedule } from 'saber-interval'
 import { walkAll } from 'saber-list'
@@ -46,3 +46,5 @@ new TouchFront()
   .onUp(() => (currentFront = 'down'))
   .onDown(() => (currentFront = 'up'))
   .listen()
+
+alert('手势控制方向！准备好了么？')

@@ -16,13 +16,15 @@
   "scripts": {
     "test": "node ./lib/test/test.js",
     "start": "tsc --watch",
-    "dev": "rollup -c --watch"
+    "dev": "rollup -c --watch",
+    "build": "uglifyjs ./build/bundle.js -o ./dist/bundle.min.js -c -m"
   },
   "devDependencies": {
-    "typescript": "^3.2.1",
     "rollup": "^1.1.2",
     "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-node-resolve": "^4.0.0"
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "typescript": "^3.2.1",
+    "uglify-js": "^3.4.10"
   },
   "dependencies": {
     "saber-canvas": "^1.1.8",
