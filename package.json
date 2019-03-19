@@ -14,7 +14,6 @@
   ],
   "main": "./lib/index.js",
   "scripts": {
-    "test": "node ./lib/test/test.js",
     "start": "tsc --watch",
     "dev": "rollup -c --watch",
     "build": "uglifyjs ./build/bundle.js -o ./dist/bundle.min.js -c -m"
@@ -27,7 +26,7 @@
     "uglify-js": "^3.4.10"
   },
   "dependencies": {
-    "saber-canvas": "^1.1.8",
+    "saber-canvas": "^1.2.0",
     "saber-dom": "^1.1.0",
     "saber-interval": "^1.1.2",
     "saber-list": "0.0.1",

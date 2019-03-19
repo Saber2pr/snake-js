@@ -14,9 +14,7 @@ import { Front } from './core/Snake'
 import { config } from './config/props'
 
 const renderTree = (Root: IBlock) =>
-  walkAll(Root, block => {
-    canvas.draw(block.node)
-  })
+  walkAll(Root, block => canvas.draw(block.node))
 
 function renderFrame(Root: IBlock) {
   canvas.clear()
@@ -35,8 +33,6 @@ const update = () => {
   }
   renderFrame(Background)
 }
-
-update()
 
 schedule(update, { delta: config.fps })
 
