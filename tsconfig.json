@@ -5,6 +5,8 @@
     "declaration": true,
     "outDir": "./lib",
     "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "strict": true,
     "lib": [
       "dom",

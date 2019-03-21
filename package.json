@@ -26,9 +26,8 @@
     "uglify-js": "^3.4.10"
   },
   "dependencies": {
-    "saber-canvas": "^1.2.0",
     "saber-dom": "^1.1.0",
-    "saber-interval": "^1.1.2",
+    "saber-h5": "0.0.7",
     "saber-list": "0.0.1",
     "saber-rand": "^1.0.9"
   }

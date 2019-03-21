@@ -15,5 +15,5 @@ export const config = {
     background: 'blue',
     head: 'red'
   },
-  fps: 500
+  fps: 1
 }
