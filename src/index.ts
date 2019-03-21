@@ -1,8 +1,8 @@
 /*
  * @Author: saber2pr
  * @Date: 2019-03-21 18:08:22
- * @Last Modified by:   saber2pr
- * @Last Modified time: 2019-03-21 18:08:22
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-03-21 18:33:47
  */
 import { TouchFront } from 'saber-dom'
 import { createCanvas, registerModule } from 'saber-h5'
@@ -16,4 +16,4 @@ registerModule(TouchFront)
 
 alert('鼠标滑动方向控制移动！准备好了么？')
 
-createCanvas(config)(Snake, Scene, Factory, Rander)
+createCanvas(config)(Snake, Scene, Factory, Rander, TouchFront)

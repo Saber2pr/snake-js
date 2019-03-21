@@ -2,7 +2,7 @@
  * @Author: saber2pr
  * @Date: 2019-03-21 18:07:57
  * @Last Modified by: saber2pr
- * @Last Modified time: 2019-03-21 18:16:25
+ * @Last Modified time: 2019-03-21 18:33:19
  */
 import { Injectable, Inject, Component, Node, Bootstrap, Label } from 'saber-h5'
 import { config } from '../config/props'
